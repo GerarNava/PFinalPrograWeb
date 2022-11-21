@@ -92,9 +92,9 @@ export default function UserEditScreen() {
   return (
     <Container className="small-container">
       <Helmet>
-        <title>Editar User ${userId}</title>
+        <title>Editar usuario ${userId}</title>
       </Helmet>
-      <h1>Editar User {userId}</h1>
+      <h1>Editar usuario {userId}</h1>
 
       {loading ? (
         <LoadingBox></LoadingBox>
@@ -115,7 +115,7 @@ export default function UserEditScreen() {
             <Form.Control
               value={email}
               type="email"
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) =>  setEmail(e.target.value)}
               required
             />
           </Form.Group>

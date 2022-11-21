@@ -65,7 +65,7 @@ export default function SigninScreen() {
           />
         </Form.Group>
         <div className="mb-3">
-          <Button type="submit">Registrarse</Button>
+          <Button type="submit">INGRESAR</Button>
         </div>
         <div className="mb-3">
         Nuevo cliente?{' '}

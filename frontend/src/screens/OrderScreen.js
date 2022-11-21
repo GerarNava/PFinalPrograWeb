@@ -223,7 +223,7 @@ export default function OrderScreen() {
                   Entregado en {order.deliveredAt}
                 </MessageBox>
               ) : (
-                <MessageBox variant="danger">Not Delivered</MessageBox>
+                <MessageBox variant="danger">No entregado</MessageBox>
               )}
             </Card.Body>
           </Card>
@@ -261,7 +261,7 @@ export default function OrderScreen() {
                       <Col md={3}>
                         <span>{item.quantity}</span>
                       </Col>
-                      <Col md={3}>${item.price}</Col>
+                      <Col md={3}>Q{item.price}</Col>
                     </Row>
                   </ListGroup.Item>
                 ))}
@@ -277,19 +277,19 @@ export default function OrderScreen() {
                 <ListGroup.Item>
                   <Row>
                     <Col>Items</Col>
-                    <Col>${order.itemsPrice.toFixed(2)}</Col>
+                    <Col>Q{order.itemsPrice.toFixed(2)}</Col>
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <Row>
                     <Col>Envío</Col>
-                    <Col>${order.shippingPrice.toFixed(2)}</Col>
+                    <Col>Q{order.shippingPrice.toFixed(2)}</Col>
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <Row>
                     <Col>Impuesto</Col>
-                    <Col>${order.taxPrice.toFixed(2)}</Col>
+                    <Col>Q{order.taxPrice.toFixed(2)}</Col>
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>

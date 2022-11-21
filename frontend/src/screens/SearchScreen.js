@@ -36,8 +36,8 @@ const reducer = (state, action) => {
 
 const prices = [
   {
-    name: 'Q1 to Q50',
-    value: '1-50',
+    name: 'Q100 to Q2500',
+    value: '100-2500',
   },
   {
     name: 'Q51 to Q200',

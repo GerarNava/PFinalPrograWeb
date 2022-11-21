@@ -76,7 +76,7 @@ export default function SignupScreen() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Form.Group className="mb-3" controlId="confirmPassword">
-            <Form.Label>Confirm Password</Form.Label>
+            <Form.Label>Confirmar Contraseña</Form.Label>
             <Form.Control
               type="password"
               onChange={(e) => setConfirmPassword(e.target.value)}
@@ -89,7 +89,7 @@ export default function SignupScreen() {
         </div>
         <div className="mb-3">
         Ya tiene una cuenta?{' '}
-          <Link to={`/signin?redirect=${redirect}`}>Registrarse</Link>
+          <Link to={`/signin?redirect=${redirect}`}>Iniciar Sesión</Link>
         </div>
       </Form>
     </Container>
